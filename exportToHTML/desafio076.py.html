@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>desafio076.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a6accd;}
+.s1 { color: #f1fa8c;}
+.s2 { color: #ffb86c;}
+.s3 { color: #ff79c6;}
+.s4 { color: #bd93f9;}
+.s5 { color: #6272a4;}
+</style>
+</head>
+<body bgcolor="#292d3e">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+desafio076.py</font>
+</center></td></tr></table>
+<pre><span class="s0">print(</span><span class="s1">'</span><span class="s2">\033</span><span class="s1">[1;4mDesafio 76 - Lista de Preços em Tuplas</span><span class="s2">\033</span><span class="s1">[m'</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s1">'</span><span class="s2">\033</span><span class="s1">[1mCrie um programa que tenha uma tupla única com nomes de produtos e seus respectivos preços, na sequência. </span><span class="s2">\n</span><span class="s1">No final, mostre uma listagem de preços, organizando os dados em forma tabular.</span><span class="s2">\033</span><span class="s1">[m'</span><span class="s0">)</span>
+
+<span class="s0">print(</span><span class="s1">'</span><span class="s2">\033</span><span class="s1">[1m-</span><span class="s2">\033</span><span class="s1">[m'</span><span class="s3">*</span><span class="s4">50</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s1">f'</span><span class="s2">\033</span><span class="s1">[1;33m</span><span class="s2">{</span><span class="s1">&quot;LISTA DE PREÇOS&quot;</span><span class="s2">:</span><span class="s1">^50</span><span class="s2">}\033</span><span class="s1">[m'</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s1">'</span><span class="s2">\033</span><span class="s1">[1m-</span><span class="s2">\033</span><span class="s1">[m'</span><span class="s3">*</span><span class="s4">50</span><span class="s0">)</span>
+<span class="s0">cont </span><span class="s3">= </span><span class="s4">0</span>
+<span class="s5">#tupla = ('Lápis', 1.75, 'Borracha', 2.00, 'Caderno', 15.90, 'Estojo', 25.00, 'Transferidor', 4.20, 'Compasso', 9.99, 'Mochila', 120.32, 'Canetas', 22.30, 'Livro', 34.90)</span>
+<span class="s0">tupla </span><span class="s3">= </span><span class="s0">(</span><span class="s1">'Lápis'</span><span class="s0">, </span><span class="s1">'Borracha'</span><span class="s0">, </span><span class="s1">'Caderno'</span><span class="s0">, </span><span class="s1">'Estojo'</span><span class="s0">, </span><span class="s1">'Transferidor'</span><span class="s0">, </span><span class="s1">'Compasso'</span><span class="s0">, </span><span class="s1">'Mochila'</span><span class="s0">, </span><span class="s1">'Canetas'</span><span class="s0">, </span><span class="s1">'Livro'</span><span class="s0">, </span>
+         <span class="s4">1.75</span><span class="s0">, </span><span class="s4">2.00</span><span class="s0">, </span><span class="s4">15.90</span><span class="s0">, </span><span class="s4">25.00</span><span class="s0">, </span><span class="s4">4.20</span><span class="s0">, </span><span class="s4">9.99</span><span class="s0">, </span><span class="s4">120.32</span><span class="s0">, </span><span class="s4">22.30</span><span class="s0">, </span><span class="s4">34.90</span><span class="s0">)</span>
+
+<span class="s3">for </span><span class="s0">lista </span><span class="s3">in </span><span class="s0">tupla</span><span class="s3">:</span>
+    <span class="s0">print(</span><span class="s1">f'</span><span class="s2">{</span><span class="s0">tupla[cont]</span><span class="s2">:</span><span class="s1">.&lt;12</span><span class="s2">}</span><span class="s1">............................R$ </span><span class="s2">{</span><span class="s0">tupla[cont</span><span class="s3">+</span><span class="s4">9</span><span class="s0">]</span><span class="s2">:</span><span class="s1">&gt;6.2f</span><span class="s2">}</span><span class="s1">'</span><span class="s0">)</span>
+    <span class="s0">cont </span><span class="s3">+= </span><span class="s4">1</span>
+    <span class="s3">if </span><span class="s0">cont </span><span class="s3">== </span><span class="s4">9</span><span class="s3">:</span>
+        <span class="s3">break</span>
+<span class="s0">print(</span><span class="s1">'-'</span><span class="s3">*</span><span class="s4">50</span><span class="s0">)</span>
+
+
+</pre>
+</body>
+</html>

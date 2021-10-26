@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>desafio073.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a6accd;}
+.s1 { color: #f1fa8c;}
+.s2 { color: #ffb86c;}
+.s3 { color: #ff79c6;}
+.s4 { color: #bd93f9;}
+</style>
+</head>
+<body bgcolor="#292d3e">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+desafio073.py</font>
+</center></td></tr></table>
+<pre><span class="s0">print(</span><span class="s1">'Desafio 73 - Tuplas com Times de Futebol'</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s1">'''Crie uma tupla preenchida com os 20 primeiros colocados da Tabela do Campeonato Brasileiro de Futebol, na ordem de colocação. Depois mostre: 
+a) Os 5 primeiros times. 
+b) Os últimos 4 colocados. 
+c) Times em ordem alfabética.  
+d) Em que posição está o time da Chapecoense.'''</span><span class="s0">)</span>
+
+<span class="s0">print(</span><span class="s1">'</span><span class="s2">\033</span><span class="s1">[1;31m=-</span><span class="s2">\033</span><span class="s1">[m'</span><span class="s3">*</span><span class="s4">20</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s1">f'</span><span class="s2">\033</span><span class="s1">[1m</span><span class="s2">{</span><span class="s1">&quot;TABELA DO BRASILEIRÃO 2020&quot;</span><span class="s2">:</span><span class="s1">^40</span><span class="s2">}\033</span><span class="s1">[m'</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s1">'</span><span class="s2">\033</span><span class="s1">[1;31m-=</span><span class="s2">\033</span><span class="s1">[m'</span><span class="s3">*</span><span class="s4">20</span><span class="s0">)</span>
+
+<span class="s0">vinte </span><span class="s3">= </span><span class="s0">(</span><span class="s1">'Corínthians'</span><span class="s0">, </span><span class="s1">'Palmeiras'</span><span class="s0">, </span><span class="s1">'Santos'</span><span class="s0">, </span><span class="s1">'Grêmio'</span><span class="s0">, </span><span class="s1">'Cruzeiro'</span><span class="s0">, </span><span class="s1">'Flamengo'</span><span class="s0">, </span><span class="s1">'Vasco da Gama'</span><span class="s0">, </span><span class="s1">'Chapecoense'</span><span class="s0">, </span><span class="s1">'Atlético-MG'</span><span class="s0">, </span><span class="s1">'Botafogo'</span><span class="s0">, </span><span class="s1">'Athlético-PR'</span><span class="s0">, </span><span class="s1">'Bahia'</span><span class="s0">, </span><span class="s1">'São Paulo'</span><span class="s0">, </span><span class="s1">'Fluminense'</span><span class="s0">, </span><span class="s1">'Sport Recife'</span><span class="s0">, </span><span class="s1">'EC Vitória'</span><span class="s0">, </span><span class="s1">'Coritiba'</span><span class="s0">, </span><span class="s1">'Avaí'</span><span class="s0">, </span><span class="s1">'Ponte Preta'</span><span class="s0">, </span><span class="s1">'Atlético-GO'</span><span class="s0">)</span>
+<span class="s0">cinco </span><span class="s3">= </span><span class="s0">vinte[</span><span class="s3">:</span><span class="s4">5</span><span class="s0">]</span>
+<span class="s0">quatro </span><span class="s3">= </span><span class="s0">vinte[</span><span class="s3">-</span><span class="s4">4</span><span class="s3">:</span><span class="s0">]</span>
+<span class="s0">ordem </span><span class="s3">= </span><span class="s0">sorted(vinte)</span>
+<span class="s0">print(</span><span class="s1">'</span><span class="s2">\033</span><span class="s1">[1;36m~</span><span class="s2">\033</span><span class="s1">[m'</span><span class="s3">*</span><span class="s4">20</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s1">f'Lista de times do Brasileirão 2020: </span><span class="s2">{</span><span class="s0">vinte</span><span class="s2">}</span><span class="s1">'</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s1">'</span><span class="s2">\033</span><span class="s1">[1;36m~</span><span class="s2">\033</span><span class="s1">[m'</span><span class="s3">*</span><span class="s4">20</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s1">f'Os 5 primeiros colocados: </span><span class="s2">{</span><span class="s0">cinco</span><span class="s2">}</span><span class="s1">'</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s1">'</span><span class="s2">\033</span><span class="s1">[1;36m~</span><span class="s2">\033</span><span class="s1">[m'</span><span class="s3">*</span><span class="s4">20</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s1">f'Os últimos 4 colocados: </span><span class="s2">{</span><span class="s0">quatro</span><span class="s2">}</span><span class="s1">'</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s1">'</span><span class="s2">\033</span><span class="s1">[1;36m~</span><span class="s2">\033</span><span class="s1">[m'</span><span class="s3">*</span><span class="s4">20</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s1">f'Times em ordem alfabética: </span><span class="s2">{</span><span class="s0">ordem</span><span class="s2">}</span><span class="s1">'</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s1">'</span><span class="s2">\033</span><span class="s1">[1;36m~</span><span class="s2">\033</span><span class="s1">[m'</span><span class="s3">*</span><span class="s4">20</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s1">f'O Chapecoense está na </span><span class="s2">{</span><span class="s0">vinte.index(</span><span class="s1">&quot;Chapecoense&quot;</span><span class="s0">)</span><span class="s3">+</span><span class="s4">1</span><span class="s2">}</span><span class="s1">ª posição'</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s1">'</span><span class="s2">\033</span><span class="s1">[1;36m~</span><span class="s2">\033</span><span class="s1">[m'</span><span class="s3">*</span><span class="s4">20</span><span class="s0">)</span></pre>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>desafio072.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a6accd;}
+.s1 { color: #f1fa8c;}
+.s2 { color: #ffb86c;}
+.s3 { color: #ff79c6;}
+.s4 { color: #bd93f9;}
+</style>
+</head>
+<body bgcolor="#292d3e">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+desafio072.py</font>
+</center></td></tr></table>
+<pre><span class="s0">print(</span><span class="s1">'</span><span class="s2">\033</span><span class="s1">[1;4mDesafio 72 - Número por Extenso</span><span class="s2">\033</span><span class="s1">[m'</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s1">'</span><span class="s2">\033</span><span class="s1">[1mCrie um programa que tenha uma tupla totalmente preenchida com uma contagem por extenso, de zero até vinte. </span><span class="s2">\n</span><span class="s1">Seu programa deverá ler um número pelo teclado (entre 0 e 20) e mostrá-lo por extenso.</span><span class="s2">\033</span><span class="s1">[m]'</span><span class="s0">)</span>
+
+<span class="s0">print(</span><span class="s1">'*'</span><span class="s3">*</span><span class="s4">30</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s1">f'</span><span class="s2">{</span><span class="s1">&quot;NÚMEROS POR EXTENSO&quot;</span><span class="s2">:</span><span class="s1">^30</span><span class="s2">}</span><span class="s1">'</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s1">'*'</span><span class="s3">*</span><span class="s4">30</span><span class="s0">)</span>
+
+<span class="s0">numex </span><span class="s3">= </span><span class="s0">(</span><span class="s1">'zero'</span><span class="s0">, </span><span class="s1">'um'</span><span class="s0">, </span><span class="s1">'dois'</span><span class="s0">, </span><span class="s1">'três'</span><span class="s0">, </span><span class="s1">'quatro'</span><span class="s0">, </span><span class="s1">'cinco'</span><span class="s0">,</span>
+         <span class="s1">'seis'</span><span class="s0">, </span><span class="s1">'sete'</span><span class="s0">, </span><span class="s1">'oito'</span><span class="s0">, </span><span class="s1">'nove'</span><span class="s0">, </span><span class="s1">'dez'</span><span class="s0">,</span>
+         <span class="s1">'onze'</span><span class="s0">, </span><span class="s1">'doze'</span><span class="s0">, </span><span class="s1">'treze'</span><span class="s0">, </span><span class="s1">'catorze'</span><span class="s0">, </span><span class="s1">'quinze'</span><span class="s0">,</span>
+         <span class="s1">'dezesseis'</span><span class="s0">, </span><span class="s1">'dezessete'</span><span class="s0">, </span><span class="s1">'dezoito'</span><span class="s0">, </span><span class="s1">'dezenove'</span><span class="s0">, </span><span class="s1">'vinte'</span><span class="s0">)</span>
+
+<span class="s3">while True:</span>
+    <span class="s0">user </span><span class="s3">= </span><span class="s0">int(input(</span><span class="s1">'Digite um número entre 0 e 20: '</span><span class="s0">))</span>
+    <span class="s3">if </span><span class="s4">0 </span><span class="s3">&gt; </span><span class="s0">user </span><span class="s3">&gt; </span><span class="s4">20</span><span class="s3">:</span>
+        <span class="s0">print(</span><span class="s1">'Tente novamente!'</span><span class="s0">)</span>
+    <span class="s3">elif </span><span class="s4">0 </span><span class="s3">&lt;= </span><span class="s0">user </span><span class="s3">&lt;= </span><span class="s4">20</span><span class="s3">:</span>
+        <span class="s0">print(</span><span class="s1">f'Você digitou o número </span><span class="s2">\033</span><span class="s1">[1;33m</span><span class="s2">{</span><span class="s0">numex[user]</span><span class="s2">}\033</span><span class="s1">[m.'</span><span class="s0">)</span>
+        <span class="s0">ask </span><span class="s3">= </span><span class="s0">input(</span><span class="s1">'Deseja continuar? (S/N) '</span><span class="s0">)</span>
+        <span class="s3">if </span><span class="s0">ask </span><span class="s3">in </span><span class="s1">'Nn'</span><span class="s3">:</span>
+            <span class="s3">break</span>
+        <span class="s3">while </span><span class="s0">ask </span><span class="s3">not in </span><span class="s1">'SsNn'</span><span class="s3">:</span>
+            <span class="s0">ask </span><span class="s3">= </span><span class="s0">input(</span><span class="s1">'Tente novamente! Deseja continuar? (S/N) '</span><span class="s0">)</span>
+
+
+
+<span class="s1">'''while True: 
+    user = int(input('Digite um número entre 0 e 20: ')) 
+    if 0 &lt;= user &lt;= 20: 
+        break 
+    print('Tente novamente!') 
+print(f'Você digitou o número {numex[user]}.')'''</span></pre>
+</body>
+</html>
